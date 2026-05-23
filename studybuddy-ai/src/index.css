@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+/* Override default scrollbars with Clean Minimalism styles */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Responsive UI Class adjustments fitting Clean Minimalism */
+body {
+  background-color: #F1F5F9;
+  color: #1E293B;
+  font-family: var(--font-sans);
+}
+
+/* Glass panel redefined for premium white panels with soft shadows */
+.glass-panel {
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 
+    0 4px 20px -2px rgba(15, 23, 42, 0.03), 
+    0 2px 6px -1px rgba(15, 23, 42, 0.02);
+}
+
+.glass-card {
+  background: #FFFFFF;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.015);
+}
+
+.glass-input {
+  background: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  color: #0F172A;
+}
+
+.glass-input:focus {
+  background: #FFFFFF;
+  border-color: #6366F1;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.1);
+}
+
+/* Soft minimal pulsing ambient glows in the background (hidden or very subtle) */
+.glow-ambient-1 {
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.04) 0%, transparent 70%);
+}
+
+.glow-ambient-2 {
+  background: radial-gradient(circle, rgba(168, 85, 247, 0.03) 0%, transparent 70%);
+}
+
+/* Math Segment Styles redefined with elegant high-contrast elements */
+.math-block {
+  font-family: var(--font-mono);
+  background: #0F172A;
+  border-left: 3.5px solid #6366F1;
+  padding: 0.85rem 1.1rem;
+  margin: 0.85rem 0;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  color: #F1F5F9;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.math-inline {
+  font-family: var(--font-mono);
+  background: #EEF2FF;
+  padding: 0.2rem 0.45rem;
+  border-radius: 0.375rem;
+  color: #4F46E5;
+  font-weight: 500;
+  border: 1px solid rgba(99, 102, 241, 0.1);
+}
