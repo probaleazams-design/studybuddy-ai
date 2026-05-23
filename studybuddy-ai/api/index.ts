@@ -25,9 +25,9 @@ try {
 } catch (err) {
   console.error("Failed to initialize Gemini API Client:", err);
 }
+const app = express();
 
 async function startServer() {
-  const app = express();
   const PORT = 3000;
 
   // Max body limit to allow image uploads (base64 strings)
